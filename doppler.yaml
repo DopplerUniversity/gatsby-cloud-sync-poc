@@ -1,0 +1,4 @@
+setup:
+  project: gatsby-cloud-sync
+  config: dev
+

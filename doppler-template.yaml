@@ -1,0 +1,37 @@
+projects:
+  - name: 'gatsby-cloud-sync'
+    description: ''
+    environments:
+      - slug: 'dev'
+        name: 'Development'
+        configs:
+          - slug: 'dev'      
+      - slug: 'build'
+        name: 'Build'
+        configs:
+          - slug: 'build'
+      - slug: 'prev'
+        name: 'Preview'
+        configs:
+          - slug: 'prev'
+      - slug: 'gatsby-cloud'
+        name: 'Gatsby-Cloud'
+        configs:
+          - slug: 'gatsby-cloud'
+    secrets:
+      dev:
+        SITE_TITLE: 'Gatsby Doppler secrets sync'
+        SITE_DESCRIPTION: 'Doppler powered secrets sync for development and Gatsby Cloud'
+        CONTENTFUL_ACCESS_TOKEN: '83768C3B-816A-4F7D-B605-D547DF388119'
+      build:
+        SITE_TITLE: 'Gatsby Doppler secrets sync'
+        SITE_DESCRIPTION: 'Doppler powered secrets sync for development and Gatsby Cloud'
+        CONTENTFUL_ACCESS_TOKEN: 'DCD643C5-220F-42BF-98C4-3E9363D29348'
+      prev:
+        SITE_TITLE: 'Gatsby Doppler secrets sync'
+        SITE_DESCRIPTION: 'Doppler powered secrets sync for development and Gatsby Cloud'
+        CONTENTFUL_ACCESS_TOKEN: 'C8573EF7-EF04-4651-ADCC-1502A47F6366'
+      gatsby-cloud:
+        GATSBY_API_URL: 'https://api.gatsbyjs.com/graphql'
+        GATSBY_SITE_ID: ''
+        GATSBY_AUTH_TOKEN: ''
